@@ -1,0 +1,17 @@
+# Backend (Flask + Database + CORS)
+flask
+flask-cors
+flask-sqlalchemy
+
+# Frontend (Streamlit)
+streamlit
+requests
+
+# Database Driver (if you ever switch from SQLite)
+mysql-connector-python
+
+# Geolocation / GPS (for address instead of typing)
+geopy
+
+# Utilities
+pandas
