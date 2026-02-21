@@ -79,6 +79,17 @@ def donation_to_dict(d: Donation) -> dict:
     }
 
 # ---------------- Routes ----------------
+
+@app.route("/")
+def home():
+    return {
+        "status": "Backend is running successfully 🚀",
+        "available_routes": [
+            "/api/register",
+            "/api/donations",
+            "/api/donations/<id>/claim"
+        ]
+    }
 @app.route("/api/register", methods=["POST"])
 def register():
     data = request.json
